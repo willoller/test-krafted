@@ -1,0 +1,280 @@
+/* line 4, neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 6, style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 125%;
+}
+
+/* line 13, style.scss */
+header {
+  position: relative;
+  min-height: 400px;
+  background: pink;
+  color: white;
+  padding: 180px 0 50px;
+  text-align: center;
+}
+/* line 21, style.scss */
+header p {
+  margin: 0;
+}
+/* line 24, style.scss */
+header h1 {
+  margin: 0 0 130px 0;
+}
+/* line 27, style.scss */
+header .container {
+  width: 100%;
+}
+
+/* line 32, style.scss */
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 37, style.scss */
+nav .container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, bourbon/addons/_clearfix.scss */
+nav .container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 41, style.scss */
+nav .logo {
+  font-size: 165%;
+  padding: 20px;
+  font-family: cursive;
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  margin-left: -102.35765%;
+}
+/* line 89, neat/grid/_span-columns.scss */
+nav .logo:last-child {
+  margin-right: 0;
+}
+/* line 53, style.scss */
+nav ul {
+  text-align: right;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 51.17883%;
+}
+/* line 89, neat/grid/_span-columns.scss */
+nav ul:last-child {
+  margin-right: 0;
+}
+/* line 58, style.scss */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  padding: 3px 0;
+}
+/* line 64, style.scss */
+nav ul li.active {
+  border: 3px solid #0f0;
+  border-width: 0 0 3px;
+}
+/* line 68, style.scss */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  color: white;
+  font-size: 60%;
+  font-weight: bold;
+}
+
+/* line 79, style.scss */
+section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 3em 2em 0;
+}
+/* line 20, bourbon/addons/_clearfix.scss */
+section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 83, style.scss */
+section h1 {
+  font-weight: normal;
+  color: #666;
+  margin: 0 0 .25em;
+}
+/* line 88, style.scss */
+section p {
+  color: #999;
+  margin: 0 0 1em;
+  font-size: 75%;
+}
+
+/* line 95, style.scss */
+article {
+  margin: 3em 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, neat/grid/_span-columns.scss */
+article:last-child {
+  margin-right: 0;
+}
+/* line 98, style.scss */
+article h1 {
+  margin: 1em .5em;
+}
+/* line 101, style.scss */
+article .button {
+  border: 2px solid green;
+}
+
+/* line 106, style.scss */
+img {
+  width: 100%;
+  height: 200px;
+  background: #aaa;
+}
+
+/* line 112, style.scss */
+.button {
+  border-radius: 4px;
+  background: white;
+  color: green;
+  padding: 14px 20px 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 80%;
+  display: inline-block;
+}
+
+/* line 122, style.scss */
+.button:hover {
+  text-decoration: underline;
+  background: #eeffee;
+}
+
+/* line 127, style.scss */
+footer {
+  height: 235px;
+  background: #999;
+  padding: 50px;
+  color: white;
+}
+/* line 133, style.scss */
+footer .container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, bourbon/addons/_clearfix.scss */
+footer .container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 137, style.scss */
+footer select {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-left: 17.05961%;
+}
+/* line 89, neat/grid/_span-columns.scss */
+footer select:last-child {
+  margin-right: 0;
+}
+/* line 141, style.scss */
+footer .input-group {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, neat/grid/_span-columns.scss */
+footer .input-group:last-child {
+  margin-right: 0;
+}
+/* line 143, style.scss */
+footer .input-group input {
+  z-index: 2;
+}
+
+/* line 151, style.scss */
+input, select {
+  padding: 14px 20px 12px;
+  font-size: 80%;
+  height: 34px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: 1px solid #666;
+}
+
+/* line 162, style.scss */
+.input-group input,
+.input-group select,
+.input-group button {
+  border-radius: 0;
+  margin: 0 -.5em;
+  vertical-align: bottom;
+  color: green;
+  font-size: 80%;
+  border: 1px solid #666;
+  border-width: 1px 0;
+}
+
+/* line 173, style.scss */
+.input-group .button {
+  padding: 11px 20px;
+  height: 34px;
+  border: 1px solid #666;
+  background: green;
+  color: white;
+  font-size: 50%;
+  font-weight: bold;
+}
+
+/* line 182, style.scss */
+.input-group :first-child {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  border-width: 1px 0 1px 1px;
+}
+
+/* line 187, style.scss */
+.input-group :last-child {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  border-width: 1px 1px 1px 0;
+}

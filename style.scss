@@ -1,0 +1,192 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+
+
+body {
+    margin:0;padding:0;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 125%;
+}
+
+header {
+    position: relative;
+    min-height: 400px;
+    background: pink;
+    color: white;
+    padding: 180px 0 50px;
+    text-align: center;
+
+    p {
+        margin:0;
+    }
+    h1 {
+        margin: 0 0 130px 0;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+nav {
+    position: absolute;
+    top:0;
+    width: 100%;
+
+    .container {
+        @include outer-container;
+    }
+
+    .logo {
+        font-size: 165%;
+        padding: 20px;
+        font-family: cursive;
+        text-decoration: none;
+        color: white;
+        font-weight: 900;
+
+        @include span-columns(1);
+        @include shift(-12);
+    }
+
+    ul {
+        text-align: right;
+        @include span-columns(6);
+        @include shift(6);
+
+        li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+            padding: 3px 0;
+        }
+        li.active {
+            border: 3px solid #0f0;
+            border-width: 0 0 3px;
+        }
+        li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            color: white;
+            font-size: 60%;
+            font-weight: bold;
+        }
+    }
+}
+
+section {
+    @include outer-container;
+
+    margin: 3em 2em 0;
+    h1 {
+        font-weight: normal;
+        color: #666;
+        margin: 0 0 .25em;
+    }
+    p {
+        color: #999;
+        margin: 0 0 1em;
+        font-size: 75%;
+    }
+}
+
+article {
+    margin: 3em 0;
+    @include span-columns(4);
+    h1 {
+        margin: 1em .5em;
+    }
+    .button {
+        border: 2px solid green;
+    }
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    background: #aaa;
+}
+
+.button {
+    border-radius: 4px;
+    background: white;
+    color: green;
+    padding: 14px 20px 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 80%;
+    display: inline-block;
+}
+.button:hover {
+    text-decoration: underline;
+    background: #eeffee;
+}
+
+footer {
+    height: 235px;
+    background: #999;
+    padding: 50px;
+    color: white;
+
+    .container {
+           @include outer-container;
+    }
+
+    select {
+        @include span-columns(3);
+        @include shift(2);
+    }
+    .input-group { 
+        @include span-columns(4);
+        input {
+            z-index: 2;
+        }
+        .button {
+        }
+    }
+}
+
+input, select {
+    padding: 14px 20px 12px;
+    font-size: 80%;
+    height: 34px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    vertical-align: middle;
+    border: 1px solid #666;
+}
+
+.input-group input,
+.input-group select,
+.input-group button {
+    border-radius: 0;
+    margin: 0 -.5em;
+    vertical-align: bottom;
+    color: green;
+    font-size: 80%;
+    border: 1px solid #666;
+    border-width: 1px 0;
+}
+.input-group .button {
+    padding: 11px 20px;
+    height: 34px;
+    border: 1px solid #666;
+    background: green;
+    color: white;
+    font-size: 50%;
+    font-weight: bold;
+}
+.input-group :first-child {
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-width: 1px 0 1px 1px;
+}
+.input-group :last-child {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-width: 1px 1px 1px 0;
+}
+
